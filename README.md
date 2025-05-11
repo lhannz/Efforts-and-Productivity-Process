@@ -18,4 +18,43 @@ then
    [Cell Phone]
 else
    [Home Phone]
+```
+
+## 2. EmpAppNoKey
+```m
+Text.From([Employee ID])
+& "-"
+& Text.From([AppNo])
+```
+
+## 3. EmpDateKey
+```m
+Text.From([Employee ID])
+& "-"
+& Date.ToText(
+    [Date],
+    "yyyyMMdd"
+  )
+```
+## 4. EmpPhoneKey
+```m
+Text.From([Employee ID])
+& "-"
+& [PhoneNo]
+```
+## 5. AppNo
+```m
+let
+    parts = Text.Split([ACCOUNT], "-")
+in
+    if List.Count(parts) = 3
+       and List.Contains(
+           {"P","R","T","D","N","C"},
+           Text.End(parts{0}, 1)
+       )
+    then
+        [ACCOUNT]
+    else
+        "-"
+```
 
