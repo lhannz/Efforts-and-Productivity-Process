@@ -15,7 +15,8 @@ A simple, CLI-driven Python script to merge multiple Call Detail Record (CDR) te
 4. [Installation](#installation)  
 5. [Usage](#usage)  
 6. [Script Breakdown](#script-breakdown)  
-7. [License](#license)  
+7. [License](#license)
+8. [CDR Consolidator Python Code](#CDR-Consolidator-Python-Code)
 
 ---
 
@@ -52,6 +53,7 @@ Install required packages via pip:
 pip install pandas
 ```
 
+## 💻 CDR Consolidator Python Code
 ```
 #!/usr/bin/env python3
 """
