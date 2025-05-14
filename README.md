@@ -57,4 +57,8 @@ in
     else
         "-"
 ```
+## 5. DateText
 
+```m
+Date.ToText([Date], "dddd, MMMM d, yyyy")
+```
