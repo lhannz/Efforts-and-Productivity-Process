@@ -60,5 +60,5 @@ in
 ## 5. DateText
 
 ```m
-Date.ToText([Date], "dddd, MMMM d, yyyy")
+Date.ToText([Date], "MMMM d, yyyy")
 ```
